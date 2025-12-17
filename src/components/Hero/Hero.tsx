@@ -15,6 +15,8 @@ const staggerContainer = {
   },
 };
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export const Hero = () => {
   return (
     <motion.section
@@ -101,10 +103,8 @@ export const Hero = () => {
             >
               <span style={{ display: "inline-flex" }}>
                 <motion.a
-                  href="/DanielDiazCV.pdf"
-                  download
-                  target="_blank"
-                  rel="noreferrer"
+                  href={`${baseUrl}DanielDiazCV.pdf`}
+                  download="DanielDiazCV.pdf"
                   aria-label="Download CV"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}

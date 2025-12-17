@@ -13,13 +13,15 @@ const staggerContainer = {
   },
 };
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export const Projects = () => {
   const projects: Project[] = [
     {
       title: "Credit card App",
       description:
         "A credit card payment UI built with React, featuring form validation, state management, and automated tests. Designed to simulate a real checkout flow with a clean, responsive interface.",
-      imageUrl: "/cc.png",
+      imageUrl: `${baseUrl}cc.png`,
       tech: [
         "React",
         "Javascript",
@@ -36,7 +38,7 @@ export const Projects = () => {
       title: "Video game App",
       description:
         "A browser-based game built with vanilla JavaScript, focused on game mechanics, user interaction, and responsive layout. A fun project to practice DOM manipulation and core front-end fundamentals.",
-      imageUrl: "/game.jpg",
+      imageUrl: `${baseUrl}game.jpg`,
       tech: ["HTML", "Javascript", "CSS"],
       url: "https://github.com/DnlAlejandro/VideoGame",
     },
@@ -44,7 +46,7 @@ export const Projects = () => {
       title: "Journal App",
       description:
         "A personal journal app to create, edit, and organize notes with a simple and modern UI. Built with TypeScript and React, including state management and testing to ensure reliability.",
-      imageUrl: "/journal.png",
+      imageUrl: `${baseUrl}journal.png`,
       tech: [
         "React",
         "TypeScript",
@@ -60,7 +62,7 @@ export const Projects = () => {
       title: "Students App",
       description:
         "A student management app to register and manage student data using forms and validations. Built with React and TypeScript, featuring a structured UI and predictable state handling.",
-      imageUrl: "/students.png",
+      imageUrl: `${baseUrl}students.png`,
       tech: [
         "React",
         "TypeScript",
