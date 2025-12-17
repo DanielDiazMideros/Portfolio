@@ -28,7 +28,7 @@ export const Navbar = () => {
         whileHover={hoverScale}
         whileTap={tapScale}
       >
-        Portfolio
+        Daniel Diaz Dev
       </motion.div>
 
       <motion.ul

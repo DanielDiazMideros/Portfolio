@@ -18,7 +18,9 @@ function App() {
       <Projects />
       <Contact />
       <>
-        <p>&copy; 2025 Daniel Diaz. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Daniel Diaz. All rights reserved.
+        </p>
       </>
     </div>
   );

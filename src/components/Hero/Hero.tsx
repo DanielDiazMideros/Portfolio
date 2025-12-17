@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import Tippy from "@tippyjs/react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -60,7 +61,7 @@ export const Hero = () => {
               View my work
             </motion.a>
             <motion.a
-              href="#projects"
+              href="#contact"
               className="cta-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -71,15 +72,47 @@ export const Hero = () => {
           </motion.div>
 
           <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a target="_blank" href="https://github.com/DnlAlejandro">
-              <i className="fab fa-github"></i>
-            </motion.a>
-            <motion.a
-              target="_blank"
-              href="https://www.linkedin.com/in/daniel-alejandro-diaz-mideros/"
+            <Tippy
+              content="Github Profile"
+              animation="shift-away"
+              delay={[150, 0]}
             >
-              <i className="fab fa-linkedin"></i>
-            </motion.a>
+              <motion.a target="_blank" href="https://github.com/DnlAlejandro">
+                <i className="fab fa-github"></i>
+              </motion.a>
+            </Tippy>
+            <Tippy
+              content="LinkedIn Profile"
+              animation="shift-away"
+              delay={[150, 0]}
+            >
+              <motion.a
+                target="_blank"
+                href="https://www.linkedin.com/in/daniel-alejandro-diaz-mideros/"
+              >
+                <i className="fab fa-linkedin"></i>
+              </motion.a>
+            </Tippy>
+
+            <Tippy
+              content="Download CV"
+              animation="shift-away"
+              delay={[150, 0]}
+            >
+              <span style={{ display: "inline-flex" }}>
+                <motion.a
+                  href="/DanielDiazCV.pdf"
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Download CV"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <i className="fas fa-file-pdf"></i>
+                </motion.a>
+              </span>
+            </Tippy>
           </motion.div>
         </motion.div>
         <motion.div

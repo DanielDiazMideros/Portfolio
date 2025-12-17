@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   imageUrl: string;
   tech: string[];
+  url: string;
 };
 
 const fadeInUp = {
@@ -17,7 +18,10 @@ export type ProjectCardProps = MotionProps & { project: Project };
 
 export const ProjectCard = ({ project, ...motionProps }: ProjectCardProps) => {
   return (
-    <motion.div
+    <motion.a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
       className="project-card"
       variants={fadeInUp}
       whileHover={{ y: -10, transition: { duration: 0.2 } }}
@@ -31,11 +35,12 @@ export const ProjectCard = ({ project, ...motionProps }: ProjectCardProps) => {
 
       <h3>{project.title}</h3>
       <p>{project.description}</p>
+
       <div className="project-tech">
         {project.tech.map((t) => (
           <span key={t}>{t}</span>
         ))}
       </div>
-    </motion.div>
+    </motion.a>
   );
 };

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/animations/shift-away.css";
 
 :root {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -25,7 +27,6 @@ body {
   min-height: 100vh;
   width: 100%;
 }
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
