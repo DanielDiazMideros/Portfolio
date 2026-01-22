@@ -18,6 +18,14 @@ const baseUrl = import.meta.env.BASE_URL;
 export const Projects = () => {
   const projects: Project[] = [
     {
+      title: "Swype — Dating App",
+      description:
+        "A Tinder-style dating app prototype built as a responsive web app. Includes an email/password authentication flow (Sign In) and a clean, component-based UI to practice routing, forms, and front-end architecture.",
+      imageUrl: `${baseUrl}dateapp.png`,
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "React-hook-form"],
+      url: "https://datingapp-iota-six.vercel.app/",
+    },
+    {
       title: "Credit card App",
       description:
         "A credit card payment UI built with React, featuring form validation, state management, and automated tests. Designed to simulate a real checkout flow with a clean, responsive interface.",
@@ -33,14 +41,6 @@ export const Projects = () => {
         "Firebase",
       ],
       url: "https://github.com/DnlAlejandro/CreditCardPayment",
-    },
-    {
-      title: "Video game App",
-      description:
-        "A browser-based game built with vanilla JavaScript, focused on game mechanics, user interaction, and responsive layout. A fun project to practice DOM manipulation and core front-end fundamentals.",
-      imageUrl: `${baseUrl}game.jpg`,
-      tech: ["HTML", "Javascript", "CSS"],
-      url: "https://github.com/DnlAlejandro/VideoGame",
     },
     {
       title: "Journal App",

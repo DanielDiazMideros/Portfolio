@@ -138,10 +138,10 @@ export const Hero = () => {
               {`const aboutMe: DeveloperProfile = {
   codename: "DanielDiazDev",
   origin: "Bogotá, Colombia ☕",
-  role: "Frontend Web Sorcerer",
+  role: "Frontend Engineer",
   stack: {
     languages: ["JavaScript", "TypeScript", "Python", "SQL"],
-    frameworks: ["React", "Vue", "Next.js", "TailwindCSS"],
+    frameworks - libraries: ["React", "Vue", "Next.js", "TailwindCSS"],
   },
   traits: [
     "pixel-perfectionist",

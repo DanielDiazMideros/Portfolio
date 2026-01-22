@@ -18,7 +18,7 @@ function App() {
       <Projects />
       <Contact />
       <>
-        <p>
+        <p className="footer-text">
           &copy; {new Date().getFullYear()} Daniel Diaz. All rights reserved.
         </p>
       </>
